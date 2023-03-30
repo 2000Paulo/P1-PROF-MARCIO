@@ -4,12 +4,11 @@
 ![engSoftware](https://user-images.githubusercontent.com/109771351/228922918-bc9b864f-57bf-443d-a45c-7b127f923eef.jpeg)
 
 
-## Estrutura-de-Dados
 ## Projeto 5 - Descrição do Problema:
 
 O problema consiste em encontrar a posição de cada elemento em um conjunto e imprimir as coordenadas em ordem ascendente, bem como calcular o somatório de todos os elementos que possuem o mesmo valor e apresentar esses valores. Além disso, o objetivo é plotar a notação Big O do resultado.
 
-### Matrix dada 6x6 :
+### Matriz dada 6x6 :
 
     1 1 1 0 0 0
     0 1 0 0 0 0
@@ -58,3 +57,6 @@ A função plt.plot() é usada para traçar um gráfico de linha simples com os 
 As funções plt.xlabel() e plt.ylabel() são usadas para adicionar rótulos descritivos aos eixos x e y, respectivamente.
 Finalmente, a função plt.show() é chamada para exibir o gráfico na tela.
 *******************
+### Materia: Estrutura de Dados - Turma B
+### Integrantes do Grupo: Paulo victor Melo,Luan Santos,Marcos Reis,João Pedro e Denis.
+### Professor: Marcio Garrido
