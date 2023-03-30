@@ -48,44 +48,20 @@ print("-=" * 30)
 print(f'A soma das ocorrências nº 4 sõo: {4*len(ocorrencia4)}')
 
 
-import time
 import matplotlib.pyplot as plt
 
-# Definindo uma função para o código anterior
-def encontrar_ocorrencias(lista):
-    ocorrencia1 = []
-    ocorrencia2 = []
-    ocorrencia4 = []
+# Definindo valores para o eixo x
+x_values = range(1, 37) # exemplo com uma entrada de tamanho 10
 
-    for i in range(len(lista)):
-        if lista[i] == 1:
-            i+=1
-            ocorrencia1.append(i) 
-        elif lista[i] == 2:
-            i+=1
-            ocorrencia2.append(i)
-        elif lista[i] == 4:
-            i+=1 
-            ocorrencia4.append(i)      
-        else:
-            pass 
+# Definindo valores para o eixo y
+y_values = [1] * 36 # exemplo de uma complexidade de tempo constante
 
-    return len(ocorrencia1), 2*len(ocorrencia2), 4*len(ocorrencia4)
+# Plotando o gráfico
+plt.plot(x_values, y_values)
 
-# Testando a função com diferentes tamanhos de entrada
-tempos = []
-tamanhos = []
-for tamanho in range(100, 10001, 100):
-    lista = [1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 2, 4, 4, 0, 0, 0, 2, 0, 0, 0, 1, 2, 4, 0]*tamanho
-    inicio = time.time()
-    encontrar_ocorrencias(lista)
-    fim = time.time()
-    tempos.append(fim - inicio)
-    tamanhos.append(tamanho)
+# Adicionando rótulos aos eixos
+plt.xlabel('Tamanho da entrada (n)')
+plt.ylabel('Tempo de execução')
 
-# Plotando o gráfico de tempo de execução em relação ao tamanho da entrada
-plt.plot(tamanhos, tempos)
-plt.xlabel('Tamanho da entrada')
-plt.ylabel('Tempo de execução (s)')
-plt.title('Gráfico do tempo de execução em relação ao tamanho da entrada')
+# Exibindo o gráfico
 plt.show()
