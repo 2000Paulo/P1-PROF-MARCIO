@@ -57,6 +57,6 @@ A função plt.plot() é usada para traçar um gráfico de linha simples com os 
 As funções plt.xlabel() e plt.ylabel() são usadas para adicionar rótulos descritivos aos eixos x e y, respectivamente.
 Finalmente, a função plt.show() é chamada para exibir o gráfico na tela.
 *******************
-### Materia: Estrutura de Dados - Turma B
+### Materia: Estrutura de Dados - Turma B - 3º período.
 ### Integrantes do Grupo: Paulo victor Melo,Luan Santos,Marcos Reis,João Pedro e Denis.
 ### Professor: Marcio Garrido
