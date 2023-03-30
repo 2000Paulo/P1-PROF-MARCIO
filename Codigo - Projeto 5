@@ -1,0 +1,66 @@
+lista1 = [1, 1, 1, 0, 0, 0, 
+          0, 1, 0, 0, 0, 0, 
+          1, 1, 1, 0, 0, 0, 
+          0, 0, 2, 4, 4, 0, 
+          0, 0, 0, 2, 0, 0, 
+          0, 0, 1, 2, 4, 0]
+
+ocorrencia1 = []
+ocorrencia2 = []
+ocorrencia4 = []
+
+
+for i in range(len(lista1)):
+    if lista1[i] == 1:
+        i+=1
+        ocorrencia1.append(i) 
+    elif lista1[i] == 2:
+        i+=1
+        ocorrencia2.append(i)
+    elif lista1[i] == 4:
+        i+=1 
+        ocorrencia4.append(i)      
+    else:
+        pass 
+
+
+print("=-=-= Olá Benvindos a solução do Projeto 5 - Estrutura de Dados ==-=")
+print("-=" *35)
+print(f'As posições das ocorrencias nº1 são: {ocorrencia1}')
+print("-=" *35)
+print(f'A quantidade ocorrências sõo: {len(ocorrencia1)}')
+print("-=" * 30)
+print(f'A soma das ocorrências nº 1 é: {1*len(ocorrencia1)}')
+print("-=" * 30)
+
+print(f'As posições das ocorrencias nº2 são: {ocorrencia2}')
+print("-=" *35)
+print(f'A quantidade ocorrências sõo: {len(ocorrencia2)}')
+print("-=" * 30)
+print(f'A soma das ocorrências nº 2 sõo: {2*len(ocorrencia2)}')
+print("-=" * 30)
+
+print(f'As posições das ocorrencias nº4 são: {ocorrencia4}')
+print("-=" *35)
+print(f'A quantidade ocorrências sõo: {len(ocorrencia4)}')
+print("-=" * 30)
+print(f'A soma das ocorrências nº 4 sõo: {4*len(ocorrencia4)}')
+
+
+import matplotlib.pyplot as plt
+
+# Definindo valores para o eixo x
+x_values = range(1, 37) # exemplo com uma entrada de tamanho 10
+
+# Definindo valores para o eixo y
+y_values = [1] * 36 # exemplo de uma complexidade de tempo constante
+
+# Plotando o gráfico
+plt.plot(x_values, y_values)
+
+# Adicionando rótulos aos eixos
+plt.xlabel('Tamanho da entrada (n)')
+plt.ylabel('Tempo de execução')
+
+# Exibindo o gráfico
+plt.show()
